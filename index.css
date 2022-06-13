@@ -1,0 +1,104 @@
+/*Style Reset*/
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+
+} 
+
+/*Variables*/
+
+:root{
+    --text-black : #343f52;
+    --text-grey : #60697b;
+    --text-off-grey: #aab0bc;
+    --text-white: #fff;
+
+    --bg-white: #fff8ef;
+    --bg-orange: #fab758;
+    --bg-off-orange : ;
+
+    --sec-orange: #fab758;
+    --sec-red: #e2626b;
+    --sec-green: #45c4a0;
+    --sec-blue : #3f78e0;
+}
+
+
+/*Fonts*/
+
+@font-face {
+    font-family: 'THICCCBOI-Black';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-Bold';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-ExtraBold';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'THICCCBOI-Light';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-Medium';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-Regular';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-Semi-Bold';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-Thicc';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-ThicccAF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-Thin';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Thin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
