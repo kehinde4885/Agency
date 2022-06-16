@@ -116,10 +116,11 @@ img{
     --text-grey : #60697b;
     --text-off-grey: #aab0bc;
     --text-white: #fff;
+    --text-grey2: #aab0bc;
 
     --bg-white: #fff8ef;
     --bg-orange: #fab758;
-    --bg-off-orange : ;
+    --bg-off-orange : #fef3e4;
 
     --sec-orange: #fab758;
     --sec-red: #e2626b;
@@ -136,6 +137,7 @@ img{
 
 body{
     font-family: 'THICCCBOI-regular';
+    color: var(--text-black);
 }
 
 
@@ -188,6 +190,7 @@ nav svg {
 .main{
     grid-template-columns: 60% 40%;
     align-items: center;
+    margin-bottom: 7em;
 
 }
 
@@ -204,7 +207,7 @@ nav svg {
     margin-bottom: 1em;
 }
 
-.main button {
+.pill-btn {
     background-color: var(--bg-orange);
     color: var(--text-white);
     font-size: 0.85rem;
@@ -228,7 +231,7 @@ nav svg {
     order: 1; 
     font-size: .8rem;
     font-family: 'THICCCBOI-Bold';
-    color: var(--text-grey);
+    color: var(--text-grey2);
     letter-spacing: .08rem;
     margin-bottom: 1.75em;
 
@@ -255,8 +258,6 @@ nav svg {
     flex-direction: column;
     align-items: center;
     padding: 12% 12%;
-    border: 2px solid;
-    border-radius: 6px;
     box-shadow: #343f52; 
 }
 
@@ -307,7 +308,201 @@ nav svg {
     
 }
 
+.service-box .text-yellow{
+    color: var(--sec-orange);
+}
+
+.service-box .text-red{
+    color: var(--sec-red);
+}
+
+.service-box .text-green{
+    color: var(--sec-green);
+
+}
+
+.service-box .text-blue{
+    color: var(--sec-blue);
+}
+
+/*article 2*/
+
+.layout-1 {
+    display: grid;
+    grid-template-columns: 40% 60% ;
+    font-family: 'THICCCBOI-Bold';
+
+}
+
+.layout-1 > div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+}
 
 
+.layout-1 > div:nth-of-type(1) > h3{
+    order: 1;
+    color: var(--text-grey2);
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    margin-bottom: 1.5em;
+}
+
+.layout-1 > div:nth-of-type(1) > h2{
+    order: 2;
+    font-size: 1.9rem;
+    margin-bottom: 1.1em;
+}
+
+.layout-1 > div:nth-of-type(1) > p{
+    order: 3;
+    font-family: 'THICCCBOI-Medium';
+    color: var(--text-grey);
+    line-height: 1.5;
+    margin-bottom: 1.7em;
+}
+
+.form{
+    order: 4;
+    display: flex;
+}
+
+.form input[type=text]{
+    flex-basis: 50%;
+    padding: 3%;
+    font-size: .75rem;
+    font-family: 'THICCCBOI-Medium';
+    color: var(--text-grey);
+    border: 1px solid rgba(8, 60,130,.07);
+    border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+}
 
 
+.form input[type=text]:focus-visible{
+    outline: none;
+    border: 1px solid var(--bg-orange);
+
+}
+
+.form button{
+    font-size: .85rem;
+    font-family: 'THICCCBOI-SemiBold';
+    color: var(--text-white);
+    background-color: var(--bg-orange);
+    border: 2px solid var(--bg-orange);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: .8em 1.5em;
+}
+
+.form::placeholder{
+
+}
+
+/*about*/
+
+.process{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.process1{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.process1 > h3{
+    order: 1;
+    font-size: .8rem;
+    font-family: 'THICCCBOI-SemiBold';
+    color: var(--text-grey2);
+    text-transform: uppercase;
+    margin-bottom: 1.8em;
+    letter-spacing: 1px;
+
+}
+
+.process1 > h2{
+    order: 2;
+    font-size: 1.9rem;
+    font-family: 'THICCCBOI-Bold';
+    line-height: 1.25;
+    margin-bottom: 1.2em;
+
+}
+
+
+.process1 > p{
+    order: 3;
+    font-size: .85rem ;
+    font-family: 'THICCCBOI-Medium';
+    line-height: 1.7;
+    color: var(--text-grey);
+    margin-bottom: 2em;
+
+
+}
+
+.process1 > button{
+    order: 4;
+    width: max-content;
+}
+
+.process2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.step {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 1.4em 5em 1.4em 1.4em;
+    border: 1px solid red;
+    border-radius: 4px;
+    margin-bottom: 1.7em;
+}
+
+.step > div:nth-of-type(1) {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'THICCCBOI-SemiBold';
+    background-color: var(--bg-off-orange);
+    color: var(--bg-orange);
+    padding: 1em;
+    border-radius: 50%;
+
+}
+
+.step > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.2em;
+}
+
+.step p {
+    font-family: 'THICCCBOI-Bold';
+    margin-bottom: .4em;
+}
+
+.step span{
+    font-size: .85rem;
+    color: var(--text-grey);
+}
+
+.solutions {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+
+.layout-2{
+    display: flex;
+    flex-direction: column;
+}
