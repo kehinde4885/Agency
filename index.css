@@ -1,11 +1,111 @@
-/*Style Reset*/
+/*Fonts*/
 
+@font-face {
+    font-family: 'THICCCBOI-Black';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-Bold';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-ExtraBold';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'THICCCBOI-Light';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-Medium';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-Regular';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-SemiBold';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-Thicc';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-ThicccAF.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THICCCBOI-Thin';
+    src: url('/Assets/Fonts/Webfont/THICCCBOI-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+
+/*Style Reset and Defaults*/
+
+html {
+    font-size: 20px;
+
+}
+
+
+.container{
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+img{
+    max-width: 100%;
+}
 
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 } 
 
@@ -25,80 +125,189 @@
     --sec-red: #e2626b;
     --sec-green: #45c4a0;
     --sec-blue : #3f78e0;
-}
 
-
-/*Fonts*/
-
-@font-face {
-    font-family: 'THICCCBOI-Black';
-    src: url('/Assets/Fonts/Webfont/THICCCBOI-Black.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    --ter-red : #eea1a6;
+    --ter-orange: #fcd49b;
+    --ter-green: #8fdcc6;
+    --ter-blue: #8caeec;
 
 }
 
-@font-face {
+
+body{
+    font-family: 'THICCCBOI-regular';
+}
+
+
+/*Header*/
+
+.header{
+    justify-content: space-between;
+    align-items: center;
+    font-size: .85rem;
+    margin-bottom: 9em;
+    margin-top: 1.5em;
+}
+
+.header img{
+    object-fit: contain;
+}
+
+.header ul{
+    list-style: none;
+}
+
+.header a{
+    text-decoration: none;
+}
+
+.header nav{
+    flex-basis: 60%;
+}
+
+nav ul {
+    justify-content: center;
+}
+
+.nav li {
+    padding: 0 1.5em;
+    display: flex;
+    align-items: center;
+
+}
+
+nav svg {
+    padding: 0 0 0 .5em;
+    
+
+}
+
+
+/*main*/
+
+.main{
+    grid-template-columns: 60% 40%;
+    align-items: center;
+
+}
+
+.main h1 {
+    font-size: 2.5rem;
     font-family: 'THICCCBOI-Bold';
-    src: url('/Assets/Fonts/Webfont/THICCCBOI-Bold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    margin-bottom: .8em;
+}
+
+.main p {
+    font-size: 1.1rem;
+    color: var(--text-grey);
+    line-height: 1.55;
+    margin-bottom: 1em;
+}
+
+.main button {
+    background-color: var(--bg-orange);
+    color: var(--text-white);
+    font-size: 0.85rem;
+    font-family: 'THICCCBOI-bold';
+    padding: .8em 1.2em;
+    border: 2px solid var(--bg-orange);
+    border-top-left-radius: 50rem;
+    border-top-right-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+}
+
+/*article 1*/
+
+.services{
+    flex-direction: column;
+}
+
+.services > h3{
+    align-self: center;
+    order: 1; 
+    font-size: .8rem;
+    font-family: 'THICCCBOI-Bold';
+    color: var(--text-grey);
+    letter-spacing: .08rem;
+    margin-bottom: 1.75em;
 
 }
 
-@font-face {
-    font-family: 'THICCCBOI-ExtraBold';
-    src: url('/Assets/Fonts/Webfont/THICCCBOI-ExtraBold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+.services > h2{
+    align-self: center;
+    order: 2;
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: 'THICCCBOI-Bold';
+    margin-bottom: 1.5em;
+}
 
+.services > div {
+    order: 3;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 2%;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12% 12%;
+    border: 2px solid;
+    border-radius: 6px;
+    box-shadow: #343f52; 
+}
+
+.service-box svg {
+    width: 20%;
+    
+}
+
+.lineal-fill.seo {
+    fill: var(--ter-orange)
+}
+
+.lineal-fill.web{
+    fill: var(--ter-red);
+}
+
+.lineal-fill.chat{
+    fill: var(--ter-green);
+}
+
+.lineal-fill.megphone{
+    fill: var(--ter-blue);
 }
 
 
-@font-face {
-    font-family: 'THICCCBOI-Light';
-    src: url('/Assets/Fonts/Webfont/THICCCBOI-Light.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-
+.service-box > p:first-of-type {
+    font-size: 1rem;
+    font-family: 'THICCCBOI-Bold';
+    margin-top: .75em;
+    margin-bottom: 1em;
 }
 
-@font-face {
+.service-box > p:nth-child(3){
+    font-size: .85rem;
     font-family: 'THICCCBOI-Medium';
-    src: url('/Assets/Fonts/Webfont/THICCCBOI-Medium.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-
+    color: var(--text-grey);
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 1.4em;
 }
 
-@font-face {
-    font-family: 'THICCCBOI-Regular';
-    src: url('/Assets/Fonts/Webfont/THICCCBOI-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+.service-box a{
 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    
 }
 
-@font-face {
-    font-family: 'THICCCBOI-Semi-Bold';
-    src: url('/Assets/Fonts/Webfont/THICCCBOI-SemiBold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
-@font-face {
-    font-family: 'THICCCBOI-Thicc';
-    src: url('/Assets/Fonts/Webfont/THICCCBOI-ThicccAF.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
-@font-face {
-    font-family: 'THICCCBOI-Thin';
-    src: url('/Assets/Fonts/Webfont/THICCCBOI-Thin.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-
-}
