@@ -322,11 +322,6 @@ nav svg {
     fill: var(--ter-blue);
 }
 
-
-.service-box > p:first-of-type {
-    
-}
-
 .service-box a{
 
     display: flex;
