@@ -190,12 +190,15 @@ body{
 
 /*Header*/
 
+header {
+    background-color: var(--bg-white);
+}
 .header{
     justify-content: space-between;
     align-items: center;
     font-size: .85rem;
-    margin-bottom: 9em;
-    margin-top: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 .header img{
@@ -233,10 +236,16 @@ nav svg {
 
 
 /*main*/
+/* 
+.intro{
+    background-color: linear-gradient(180deg,#fff8ef,rgba(255,255,255,0));
+} */
+
 
 .main{
     grid-template-columns: 60% 40%;
     align-items: center;
+    padding-top: 9em;
     margin-bottom: 7em;
 
 }
@@ -298,7 +307,8 @@ nav svg {
     flex-direction: column;
     align-items: center;
     padding: 12% 12%;
-    box-shadow: #343f52; 
+    border: 1px solid ;
+    border-radius: 3px; 
 }
 
 .service-box svg {
@@ -354,6 +364,7 @@ nav svg {
     display: grid;
     grid-template-columns: 40% 60% ;
     font-family: 'THICCCBOI-Bold';
+    padding-top: 7em;
 
 }
 
@@ -414,6 +425,7 @@ nav svg {
 .process{
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-top: 7em;
 
 }
 
@@ -454,7 +466,7 @@ nav svg {
     align-items: center;
     width: max-content;
     padding: 1.4em 5em 1.4em 1.4em;
-    border: 1px solid red;
+    border: 1px solid ;
     border-radius: 4px;
     margin-bottom: 1.7em;
 }
@@ -491,7 +503,9 @@ nav svg {
     grid-template-columns: 50% 45%;
     align-items: center;
     gap: 5%;
+    padding-top: 7em;
 }
+
 
 
 .layout-2{
@@ -527,6 +541,7 @@ nav svg {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 7em;
 }
 
 .team > h3{
@@ -563,6 +578,7 @@ nav svg {
 .solution2{
     display: grid;
     grid-template-columns: 40% 60%;
+    padding-top: 7em;
 }
 
 .layout-3{
@@ -608,6 +624,7 @@ nav svg {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
+    padding-top: 7em;
 
 }
 
@@ -621,7 +638,7 @@ nav svg {
 }
 
 .layout-4 div{
-    border: 1px solid red;
+    border: 1px solid ;
     padding: 1em;
 }
 
@@ -676,6 +693,10 @@ nav svg {
 
 /*Prices*/
 
+.pricing{
+    padding-top: 7em;
+}
+
 .prices{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -696,7 +717,7 @@ nav svg {
 }
 
 .plan{
-    border: 1px solid red;
+    border: 1px solid ;
     padding: 4em;
     margin-right: 1em;
 }
@@ -734,6 +755,7 @@ nav svg {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
+    margin-top: 7em;
 }
 
 .invitation ul {
@@ -753,13 +775,14 @@ nav svg {
 footer{
     background-color: rgb(53,63,82);
     color: var(--text-white);
+    padding-bottom: 3em;
 }
 
 .layout-8{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 3em;
+    padding: 3em 0;
     border-bottom: 1px solid rgba(164 ,174 ,198 ,.2);
 }
 
@@ -783,9 +806,20 @@ footer{
     margin-bottom: .4em;
 }
 
+.layout-9 ul {
+    margin-top: 1em;
+}
+
 .layout-9 p{
     font-size: .85rem;
     font-family: 'THICCCBOI-SemiBold';
     color: var(--text-grey2);
     line-height: 1.5;
+    margin-top: 1em;
 }
+
+.layout-9 form {
+    margin-top: 1em;
+}
+
+
