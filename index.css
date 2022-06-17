@@ -733,7 +733,6 @@ nav svg {
 .invitation {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    grid-auto-rows: 100%;
     align-items: center;
 }
 
