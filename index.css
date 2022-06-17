@@ -109,6 +109,53 @@ img{
 
 } 
 
+.heading2{
+    font-size: 1.9rem;
+    font-family: 'THICCCBOI-Bold';
+    margin-bottom: 1em;
+}
+
+.heading3{
+    font-size: .8rem;
+    font-family: 'THICCCBOI-SemiBold';
+    color: var(--text-grey2);
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+}
+
+.heading4{ 
+
+    font-size: 1rem;
+    font-family: 'THICCCBOI-Bold';
+    margin-top: .75em;
+    margin-bottom: 1em;
+}
+
+.pg1{
+    font-size: .85rem;
+    font-family: 'THICCCBOI-Medium';
+    color: var(--text-grey);
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.pg2{
+    font-size: .85rem;
+    font-family: 'THICCCBOI-Medium';
+    color: var(--text-grey);
+    line-height: 1.7;
+    margin-bottom: 1.5em;
+}
+
+.pg3{
+    font-size: 1rem;
+    font-family: 'THICCCBOI-Bold';
+    margin-top: .75em;
+    margin-bottom: 1em;
+}
+
 /*Variables*/
 
 :root{
@@ -229,22 +276,15 @@ nav svg {
 .services > h3{
     align-self: center;
     order: 1; 
-    font-size: .8rem;
-    font-family: 'THICCCBOI-Bold';
-    color: var(--text-grey2);
-    letter-spacing: .08rem;
-    margin-bottom: 1.75em;
-
 }
 
 .services > h2{
     align-self: center;
     order: 2;
     text-align: center;
-    font-size: 1.9rem;
-    font-family: 'THICCCBOI-Bold';
-    margin-bottom: 1.5em;
 }
+
+
 
 .services > div {
     order: 3;
@@ -284,19 +324,7 @@ nav svg {
 
 
 .service-box > p:first-of-type {
-    font-size: 1rem;
-    font-family: 'THICCCBOI-Bold';
-    margin-top: .75em;
-    margin-bottom: 1em;
-}
-
-.service-box > p:nth-child(3){
-    font-size: .85rem;
-    font-family: 'THICCCBOI-Medium';
-    color: var(--text-grey);
-    line-height: 1.7;
-    text-align: center;
-    margin-bottom: 1.4em;
+    
 }
 
 .service-box a{
@@ -342,25 +370,14 @@ nav svg {
 
 .layout-1 > div:nth-of-type(1) > h3{
     order: 1;
-    color: var(--text-grey2);
-    text-transform: uppercase;
-    font-size: .8rem;
-    letter-spacing: .05rem;
-    margin-bottom: 1.5em;
 }
 
 .layout-1 > div:nth-of-type(1) > h2{
     order: 2;
-    font-size: 1.9rem;
-    margin-bottom: 1.1em;
 }
 
 .layout-1 > div:nth-of-type(1) > p{
     order: 3;
-    font-family: 'THICCCBOI-Medium';
-    color: var(--text-grey);
-    line-height: 1.5;
-    margin-bottom: 1.7em;
 }
 
 .form{
@@ -397,10 +414,6 @@ nav svg {
     padding: .8em 1.5em;
 }
 
-.form::placeholder{
-
-}
-
 /*about*/
 
 .process{
@@ -417,33 +430,16 @@ nav svg {
 
 .process1 > h3{
     order: 1;
-    font-size: .8rem;
-    font-family: 'THICCCBOI-SemiBold';
-    color: var(--text-grey2);
-    text-transform: uppercase;
-    margin-bottom: 1.8em;
-    letter-spacing: 1px;
-
 }
+
 
 .process1 > h2{
     order: 2;
-    font-size: 1.9rem;
-    font-family: 'THICCCBOI-Bold';
-    line-height: 1.25;
-    margin-bottom: 1.2em;
-
 }
 
 
 .process1 > p{
     order: 3;
-    font-size: .85rem ;
-    font-family: 'THICCCBOI-Medium';
-    line-height: 1.7;
-    color: var(--text-grey);
-    margin-bottom: 2em;
-
 
 }
 
@@ -497,8 +493,9 @@ nav svg {
 
 .solutions {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 45%;
     align-items: center;
+    gap: 5%;
 }
 
 
@@ -506,3 +503,277 @@ nav svg {
     display: flex;
     flex-direction: column;
 }
+
+.layout-2 h3{
+    order: 1;
+}
+
+.layout-2 h2{
+    order: 2;
+}
+
+.layout-2 ul{
+    order: 3;
+}
+
+.layout-2 > ul{
+    font-size: .9rem;
+    font-family: 'THICCCBOI-SemiBold';
+}
+
+.layout-2 li{
+    margin-bottom: 2em;
+}
+
+
+/*team*/
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team > h3{
+    order: 1;
+}
+
+.team > h2{
+    order: 2;
+    text-align: center;
+}
+
+.team > div{
+    order: 3;
+    align-self: baseline;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+}
+
+.member {
+    padding: 1.5em;
+}
+
+.member img{
+    border-radius: 50%;
+}
+
+.member svg {
+    margin-right: 1em;
+}
+
+/*solutions2*/
+
+.solution2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.layout-3{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20%;
+}
+
+.layout-3 > h3{
+    order: 1;
+}
+
+.layout-3 > h2{
+    order: 2;
+}
+
+.layout-3 > p{
+    order: 3;
+}
+
+.layout-3 > div{
+    order: 4;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.layout-3 li{
+    list-style: none;
+    display: flex;
+}
+
+.layout-3 span.pg2{
+    margin-bottom: 1em;
+}
+
+.layout-3 span.check{
+    color: var(--sec-orange);
+}
+
+/*Testimonials*/
+
+.testimonials{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+}
+
+.layout-4{
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5em;
+
+
+}
+
+.layout-4 div{
+    border: 1px solid red;
+    padding: 1em;
+}
+
+.layout-4 > div:nth-child(1){
+    grid-column: 1/6;
+}
+
+.layout-4 > div:nth-child(2){
+    grid-column: 6/12;
+
+}
+
+.layout-4 > div:nth-child(3){
+    grid-row: 2;
+    grid-column: 2/7;
+}
+
+.layout-4 > div:nth-child(4){
+
+    grid-row: 2;
+    grid-column: 7/13;
+
+}
+
+.layout-5{
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+
+}
+
+.layout-5 > h3{
+    order: 1;
+}
+
+
+.layout-5 > h2{
+    order: 2;
+}
+
+
+.layout-5 > p{
+    order: 3;
+    
+}
+
+
+.layout-5 > button{
+    order: 4;
+    width: max-content;
+}
+
+/*Prices*/
+
+.prices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.layout-6 {
+    padding-right: 40%;
+}
+
+.layout-7{
+    display: flex
+}
+
+.layout-7 li {
+    list-style: none;
+    margin-bottom: 1em;;
+}
+
+.plan{
+    border: 1px solid red;
+    padding: 4em;
+    margin-right: 1em;
+}
+
+.plan p:first-child{
+    font-size: 2.4rem;
+    font-family: 'THICCCBOI-Medium';
+    margin-bottom: .4em;
+
+}
+
+.plan p:nth-of-type(2){
+    font-size: 1rem;
+    font-family: 'THICCCBOI-SemiBold'
+}
+
+.plan ul{
+    font-family: 'THICCCBOI-Regular';
+    font-size: .85rem;
+    margin: 2.5em 0 
+}
+
+.bold{
+    font-family: 'THICCCBOI-Medium';
+}
+
+.sub{
+    font-size: .85rem;
+    color: var(--text-grey);
+}
+
+/*invitation*/
+
+.invitation {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-auto-rows: 100%;
+    align-items: center;
+}
+
+.invitation ul {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 0;
+}
+
+.invitation li {
+    list-style: none;
+    width: 7%;
+}
+
+/*footer*/
+
+.layout-8{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3em;
+    border-bottom: 1px solid rgba(164 ,174 ,198 ,.2);
+}
+
+.layout-8 > h2.heading2{
+    margin-bottom: 0;
+}
+
+.layout-9 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.layout-9 li{
+    list-style: none;
+}
+
