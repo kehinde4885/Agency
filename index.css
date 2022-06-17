@@ -756,6 +756,11 @@ nav svg {
 
 /*footer*/
 
+footer{
+    background-color: rgb(53,63,82);
+    color: var(--text-white);
+}
+
 .layout-8{
     display: flex;
     justify-content: space-between;
@@ -771,9 +776,22 @@ nav svg {
 .layout-9 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: space-around;
+    margin-top: 3em;
 }
 
 .layout-9 li{
     list-style: none;
+    font-size: .85rem;
+    font-family: 'THICCCBOI-SemiBold';
+    color: var(--text-grey2);
+    line-height: 1.5;
+    margin-bottom: .4em;
 }
 
+.layout-9 p{
+    font-size: .85rem;
+    font-family: 'THICCCBOI-SemiBold';
+    color: var(--text-grey2);
+    line-height: 1.5;
+}
