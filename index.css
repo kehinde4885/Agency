@@ -83,9 +83,15 @@ html {
 
 
 .container{
-    width: 1440px;
-    max-width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
+}
+
+@media ( max-width: 1439px) {
+    
+    .container {
+        width: 80%;
+    }
 }
 
 .flex{
@@ -98,6 +104,7 @@ html {
 
 img{
     max-width: 100%;
+    object-fit: contain;
 }
 
 *,
@@ -244,11 +251,11 @@ nav svg {
 
 .main{
     grid-template-columns: 60% 40%;
+    height: 70vh;
+    align-content: center;
     align-items: center;
-    padding-top: 9em;
-    margin-bottom: 7em;
-
 }
+
 
 .main h1 {
     font-size: 2.5rem;
@@ -280,6 +287,8 @@ nav svg {
 
 .services{
     flex-direction: column;
+    height: 70vh;
+    justify-content: center;
 }
 
 .services > h3{
@@ -309,11 +318,11 @@ nav svg {
     padding: 12% 12%;
     border: 1px solid ;
     border-radius: 3px; 
+    text-align: center;
 }
 
-.service-box svg {
+.service-box > svg {
     width: 20%;
-    
 }
 
 .lineal-fill.seo {
@@ -338,7 +347,14 @@ nav svg {
     width: 100%;
     justify-content: center;
     text-decoration: none;
+    font-size: .85rem;
+    align-items: center;
+    font-family: 'THICCCBOI-SemiBold';
     
+}
+
+.service-box > a span {
+    margin-right: .3em;
 }
 
 .service-box .text-yellow{
@@ -362,9 +378,10 @@ nav svg {
 
 .layout-1 {
     display: grid;
-    grid-template-columns: 40% 60% ;
+    grid-template-columns: 50% 50% ;
     font-family: 'THICCCBOI-Bold';
-    padding-top: 7em;
+    height: 70vh;
+    align-content: center;
 
 }
 
@@ -425,7 +442,8 @@ nav svg {
 .process{
     display: grid;
     grid-template-columns: 50% 50%;
-    padding-top: 7em;
+    height: 70vh;
+    align-content: center;
 
 }
 
@@ -471,6 +489,13 @@ nav svg {
     margin-bottom: 1.7em;
 }
 
+@media (max-width: 1399px) {
+    .step {
+        width: 100%;
+    }
+
+}
+
 .step > div:nth-of-type(1) {
     text-align: center;
     font-size: 1.1rem;
@@ -501,9 +526,11 @@ nav svg {
 .solutions {
     display: grid;
     grid-template-columns: 50% 45%;
+    height: 70vh;
+    align-content: center;
     align-items: center;
     gap: 5%;
-    padding-top: 7em;
+
 }
 
 
@@ -541,7 +568,8 @@ nav svg {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 7em;
+    height: 60vh;
+    justify-content: center;
 }
 
 .team > h3{
@@ -563,6 +591,7 @@ nav svg {
 
 .member {
     padding: 1.5em;
+    border: 1px solid;
 }
 
 .member img{
@@ -577,14 +606,14 @@ nav svg {
 
 .solution2{
     display: grid;
-    grid-template-columns: 40% 60%;
-    padding-top: 7em;
+    grid-template-columns: 50% 50%;
+    height: 70vh;
+    align-content: center;
 }
 
 .layout-3{
     display: flex;
     flex-direction: column;
-    padding-right: 20%;
 }
 
 .layout-3 > h3{
@@ -624,7 +653,8 @@ nav svg {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
-    padding-top: 7em;
+    height: 70vh;
+    align-content: center;
 
 }
 
@@ -666,7 +696,6 @@ nav svg {
 .layout-5{
     display: flex;
     flex-direction: column;
-    padding: 5em;
 
 }
 
@@ -694,32 +723,35 @@ nav svg {
 /*Prices*/
 
 .pricing{
-    padding-top: 7em;
+
 }
 
 .prices{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30% 70%;
+    height: 70vh;
     align-items: center;
+    align-content: center;
 }
 
 .layout-6 {
-    padding-right: 40%;
+
 }
 
 .layout-7{
+    justify-self: end;
     display: flex
 }
 
 .layout-7 li {
     list-style: none;
-    margin-bottom: 1em;;
+    margin-bottom: 1em;
 }
 
 .plan{
     border: 1px solid ;
-    padding: 4em;
-    margin-right: 1em;
+    margin-right: 1.5em;
+    padding: 2em 5em 3em;
 }
 
 .plan p:first-child{
@@ -753,9 +785,11 @@ nav svg {
 
 .invitation {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    align-content: center;
     align-items: center;
-    margin-top: 7em;
+
 }
 
 .invitation ul {
